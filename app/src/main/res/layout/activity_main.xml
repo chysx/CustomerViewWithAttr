@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:zhang="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -9,8 +10,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="zhang.com.customerviewwithattr.MainActivity">
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:background="@drawable/ic_account_box"/>
+    <zhang.com.customerviewwithattr.CustomerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        zhang:testStr="test_str"
+        zhang:testInteger="500"
+        zhang:testDimension="20px"
+        zhang:testColor="#ff2356" />
+    <!--zhang:testReference="@drawable/ic_launcher"-->
+
+</LinearLayout>

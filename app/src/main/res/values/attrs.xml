@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="customer_view">
+        <attr name="testStr" format="string"></attr>
+        <attr name="testInteger" format="integer"></attr>
+        <attr name="testDimension" format="dimension"></attr>
+        <attr name="testReference" format="reference"></attr>
+        <attr name="testColor" format="color"></attr>
+    </declare-styleable>
+</resources>
